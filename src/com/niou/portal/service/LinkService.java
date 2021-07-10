@@ -8,17 +8,10 @@ import java.util.List;
 
 /**
  * <pre>
- * @Description: 连接服务
+ * @Description:
  * </pre>
- * @author 董珊珊<br>
- * <b>mail</b> dongshanshan@syncsoft.com<br>
- * <b>date</b> 2021/06/19 14:55<br>
- * @version 1.0.0
- * <pre>
- * 修改记录
- *  版本号		修订日期		修改人		bug编号		修改内容
- *  1.0.0		2021/06/19 	董珊珊		    		新建
- * </pre>
+ * @Auther: Niou
+ * @Date: 2021/6/19 15:00
  */
 public class LinkService {
     public static BaseLinkDao dao = new LinkDao();

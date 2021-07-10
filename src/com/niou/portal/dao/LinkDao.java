@@ -1,8 +1,4 @@
-package com.niou.portal.dao;/**
- * @Auther: Niou
- * @Date: 2021/6/19 14:13
- * @Description:
- */
+package com.niou.portal.dao;
 
 import com.niou.portal.bean.Data;
 import com.niou.portal.bean.Link;
@@ -10,22 +6,14 @@ import com.niou.portal.util.DBUtil;
 
 import java.sql.*;
 import java.util.ArrayList;
-import java.util.Date;
 import java.util.List;
 
 /**
  * <pre>
- * @Description: 连接Dao
+ * @Description:
  * </pre>
- * @author 董珊珊<br>
- * <b>mail</b> dongshanshan@syncsoft.com<br>
- * <b>date</b> 2021/06/19 14:13<br>
- * @version 1.0.0
- * <pre>
- * 修改记录
- *  版本号		修订日期		修改人		bug编号		修改内容
- *  1.0.0		2021/06/19 	董珊珊		    		新建
- * </pre>
+ * @Auther: Niou
+ * @Date: 2021/6/19 15:00
  */
 public class LinkDao implements BaseLinkDao {
     private static final String SQL_FIND_ALL = "select * from kkb_link l,kkb_type t order by t.sort,l.sort";

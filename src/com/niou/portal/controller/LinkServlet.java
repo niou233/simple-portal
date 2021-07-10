@@ -1,16 +1,10 @@
-package com.niou.portal.controller;/**
- * @Auther: Niou
- * @Date: 2021/6/19 15:00
- * @Description:
- */
+package com.niou.portal.controller;
 
 import com.alibaba.fastjson.JSON;
 import com.niou.portal.bean.Data;
-import com.niou.portal.bean.Link;
 import com.niou.portal.bean.Message;
 import com.niou.portal.service.LinkService;
 
-import javax.jws.WebService;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -21,17 +15,11 @@ import java.util.List;
 
 /**
  * <pre>
- * @Description: 连接请求
+ * @Description:
  * </pre>
- * @author 董珊珊<br>
- * <b>mail</b> dongshanshan@syncsoft.com<br>
- * <b>date</b> 2021/06/19 15:00<br>
- * @version 1.0.0
- * <pre>
- * 修改记录
- *  版本号		修订日期		修改人		bug编号		修改内容
- *  1.0.0		2021/06/19 	董珊珊		    		新建
- * </pre>
+ * @Auther: Niou
+ * @Date: 2021/6/19 15:00
+ * @Description:
  */
 @WebServlet("/links")
 public class LinkServlet extends HttpServlet {
