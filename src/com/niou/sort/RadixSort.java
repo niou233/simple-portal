@@ -20,7 +20,7 @@ public class RadixSort {
      * <pre>
      *  桶排序，基数binsort的改进排序方法
      * </pre>
-     * @author 董珊珊
+     * @author niou
      * @param A 原数组
      * @param k 最大位数
      * @param r 基数
@@ -29,7 +29,7 @@ public class RadixSort {
      * <pre>
      * 修改记录
      *  版本号     修订日期        修改人     bug编号       修改内容
-     *  1.0.0      2021/5/11      董珊珊                     新建
+     *  1.0.0      2021/5/11      niou                     新建
      * </pre>
      */
     public static void sort(int a[], int k, int r){

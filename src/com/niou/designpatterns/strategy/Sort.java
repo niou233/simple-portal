@@ -1,21 +1,9 @@
-package com.niou.sort;
+package com.niou.designpatterns.strategy;
 
-import java.lang.*;
-import java.io.*;
-import java.util.*;
+import java.util.Comparator;
 
 // 冒泡排序(BubbleSort)  O(n2)
-public class BubbleSort {
-    public static void main(String[] args){
-        int[] a = {27, 91, 1, 97, 17, 23, 84, 28, 72, 5, 67, 25};
-        // 打印
-        for (int i : a) {
-            System.out.print(i + " ");
-        }
-        System.out.println(" ");
-        BubbleSort.sort(a);
-    }
-
+public class Sort<T> {
     /**
      * <pre>
      *  排序
@@ -29,17 +17,13 @@ public class BubbleSort {
      *  1.0.0      2021/5/11      niou                     新建
      * </pre>
      */
-    public static void sort(int a[]){
+    public void sort(T[] a, Comparator<T> c){
         for(int i = 1; i < a.length; i++) { // 表示趟数，一共arr.length-1次。
             for(int j = 0; j < a.length - i; j++) {
-                if(a[j] > a[j + 1]) {
-                    BubbleSort.swap(a, j, j+1);
+                if(c.compare(a[j], a[j + 1]) == 1) {
+                    this.swap(a, j, j+1);
                 }
             }
-        }
-        // 打印结果
-        for (int i : a) {
-            System.out.print(i + " ");
         }
     }
 
@@ -59,8 +43,8 @@ public class BubbleSort {
      *  1.0.0      2021/5/12      niou                     新建
      * </pre>
      */
-    public static void swap(int[] a, int i, int j){
-        int temp = a[i];
+    public void swap(T[] a, int i, int j){
+        T temp = a[i];
         a[i] = a[j];
         a[j] = temp;
     }

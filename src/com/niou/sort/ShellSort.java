@@ -19,13 +19,13 @@ public class ShellSort{
      * <pre>
      *  排序
      * </pre>
-     * @author 董珊珊
+     * @author niou
      * @param A 原数组
      * @throws
      * <pre>
      * 修改记录
      *  版本号     修订日期        修改人     bug编号       修改内容
-     *  1.0.0      2021/5/11      董珊珊                     新建
+     *  1.0.0      2021/5/11      niou                     新建
      * </pre>
      */
     public static void sort(int a[]){
@@ -52,7 +52,7 @@ public class ShellSort{
      * <pre>
      * 交换
      * </pre>
-     * @author 董珊珊
+     * @author niou
      * @param a 原数组
      * @param i 交换对象1位置
      * @param j 交换对象2位置
@@ -61,7 +61,7 @@ public class ShellSort{
      * <pre>
      * 修改记录
      *  版本号     修订日期        修改人     bug编号       修改内容
-     *  1.0.0      2021/5/12      董珊珊                     新建
+     *  1.0.0      2021/5/12      niou                     新建
      * </pre>
      */
     public static void swap(int[] a, int i, int j){
